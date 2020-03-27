@@ -1,0 +1,26 @@
+.main_chat
+  .main_chat__header
+    .main_chat__header__contents
+      %p.main_chat__header__contents__name kana
+      %p.main_chat__header__contents__list Member : kana
+    = link_to "#", class: "main_chat__header__btn" do 
+      Edit
+  .main_chat__centers
+    .main_chat__centers__center
+      .main_chat__centers__center__info
+        %p.main_chat__centers__center__info__name kana
+        %p.main_chat__centers__center__info__date 2020/3/26(wed)17:00:00
+      %p.main_chat__centers__center__text こんにちは！
+      
+      .main_chat__centers__center__info
+        %p.main_chat__centers__center__info__name kana
+        %p.main_chat__centers__center__info__date 2020/3/26(wed)17:00:00
+      %p.main_chat__centers__center__text こんにちは！
+  .main_chat__form
+    %form.new_message
+      .input-box
+        %input{type: "text", class: "input-box__text",placeholder:"type a message"}
+        %label{class: "input-box__image"}
+          = icon('fas','image')
+          %input{type: "file",class: "input-box__image__file"}
+      %input{type:"submit", value:"Send", class: "submit-btn"}
