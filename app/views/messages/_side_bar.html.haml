@@ -1,0 +1,18 @@
+.side_bar
+  .side_bar_header
+    .side_bar_header__box
+      %p.side_bar_header__box__name kana
+      %ul.side_bar_header__box__icon
+        %li<>
+        = link_to "#", class: "side_bar_header__box__icon__btn" do
+          = icon('far', 'edit')
+        %li<>
+        = link_to "#", class: "side_bar_header__box__icon__btn" do
+          = icon('fas', 'cog')
+  .side_bar_main
+    = link_to "#", class: "side_bar_main__group" do
+      %p.side_bar_main__group__group-name kana
+      %p.side_bar_main__group__group-news kana
+    = link_to "#", class: "side_bar_main__group" do
+      %p.side_bar_main__group__group-name kana
+      %p.side_bar_main__group__group-news kana

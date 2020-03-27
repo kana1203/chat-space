@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+}
+
+$fontcolor:white;
+$btn:#38aef0;
+$name:#333333;
+$thin:#999999;
+
+
+.wrapper{
+  display: flex;
+  .main_chat{
+    width: calc(100vw - 300px);
+    &__header{
+      height: 100px;
+      background-color: #ffffff;
+      padding: 0 40px;
+      border-bottom: solid 1px #eee;
+      display: flex;
+      justify-content: space-between;
+      &__contents{
+        padding-top: 35px;
+        &__name{
+          padding-bottom: 15px;
+          font-size: 20px;
+          color: $name;
+        }
+        &__list{
+          font-size: 12px;
+          color: $thin;
+        }
+      }
+      &__btn{
+        height: 40px;
+        text-decoration: none;
+        color: $btn;
+        border: solid 1px $btn;
+        line-height: 40px;
+        padding: 0 20px;
+        margin-top:30px ;
+      }
+    }
+    &__centers{
+      height: calc(100vh - 190px);
+      background-color: #fafafa;
+      padding: 35px 40px;
+      &__center{
+        padding-bottom: 46px;
+        &__info{
+          padding-bottom: 12px;
+          display: flex;
+          &__name{
+            font-size: 16px;
+            color: $name;
+            font-weight: bold;
+          }
+          &__date{
+            font-size: 12px;
+            color: $thin;
+            margin-left: 10px;
+          }
+        }
+        &__text{
+          font-size: 14px;
+          color: #434A54;
+          margin-bottom: 46px;
+        }
+      }
+    }
+    &__form{
+      height: 90px;
+      background-color: #d2d2d2;
+      padding: 20px 40px;
+      .new_message{
+        display: flex;
+        .input-box{
+          width: 100%;
+          display: flex;
+          position: relative;
+          &__text{
+            height: 50px;
+            width: 100%;
+            color: #434a54;
+            border-style: none;
+            padding-left: 10px;
+          }
+          &__image{
+            position: absolute;
+              top: 10px;
+              right: 10px;
+            &__file{
+              display: none;
+            }
+          }
+        }
+        .submit-btn{
+          width: 100px;
+          height: 50px;
+          padding: 0 30px;
+          margin-left: 15px;
+          background-color: $btn;
+          color: $fontcolor;
+          cursor: pointer;
+        }
+      } 
+    }
+  }
+
+
+
+
+  .side_bar{
+    height: 100vh;
+    width: 300px;
+    background-color:#253141;
+    &_header{
+      height: 100px;
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+      &__box{
+        height: 20px;
+        width: 100%;
+        color: $fontcolor;
+        display: flex;
+        justify-content: space-between;
+        font-weight: bold;
+        &__icon{
+          display: flex;
+          &__btn{
+            color: $fontcolor;
+            margin-left: 5px;
+          }
+        }
+      }
+    }
+    &_main{
+      background-color: #2f3e51;
+      height: calc(100vh - 100px);
+      padding: 20px 20px 0;
+      &__group{
+        text-decoration: none;
+        margin-bottom: 40px;
+        color: $fontcolor;
+        &__group-name{
+          font-size: 15px;
+          padding-bottom: 5px;
+        }
+        &__group-news{
+          font-size: 11px;
+          margin-bottom: 40px;
+        }
+      }
+    }
+    
+  }
+}
