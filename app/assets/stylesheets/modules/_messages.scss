@@ -41,32 +41,29 @@
       height: calc(100vh - 190px);
       background-color: #fafafa;
       padding: 35px 40px;
-      &__center{
-        padding-bottom: 46px;
-        &__info{
-          padding-bottom: 12px;
-          display: flex;
-          &__name{
-            font-size: 16px;
-            color: $name;
-            font-weight: bold;
-          }
-          &__date{
-            font-size: 12px;
-            color: $thin;
-            margin-left: 10px;
-          }
+      &__info{
+        padding-bottom: 12px;
+        display: flex;
+        &__name{
+          font-size: 16px;
+          color: $name;
+          font-weight: bold;
         }
-        &__text{
-          font-size: 14px;
-          color: #434A54;
-          margin-bottom: 46px;
+        &__date{
+          font-size: 12px;
+          color: $thin;
+          margin-left: 10px;
         }
+      }
+      &__text{
+        font-size: 15px;
+        color: #434A54;
+        margin-bottom: 46px;
       }
     }
     &__form{
       height: 90px;
-      background-color: #d2d2d2;
+      background-color:#d2d2d2;
       padding: 20px 40px;
       .new_message{
         display: flex;
@@ -81,16 +78,20 @@
             border-style: none;
             padding-left: 10px;
           }
-          &__image{
+          .input-mask{
             position: absolute;
-              top: 10px;
-              right: 10px;
-            &__file{
-              display: none;
+            top: 10px;
+            right: 10px;
+            font-size: 1.3rem;
+            .input-image{
+              cursor: pointer;
+              .hidden{
+                display: none;
+              }
             }
           }
         }
-        .submit-btn{
+        .submit{
           width: 100px;
           height: 50px;
           padding: 0 30px;
@@ -98,10 +99,11 @@
           background-color: $btn;
           color: $fontcolor;
           cursor: pointer;
+
         }
-      } 
+      }
     }
-  }
+  } 
 
 
 
