@@ -8,7 +8,7 @@
         - @group.users.each do |user|
           = user.name
     = link_to  edit_group_path(@group) , class: "main_chat__header__btn" do 
-      Exit
+      Edit
   
   .main_chat__centers
     = render @messages
