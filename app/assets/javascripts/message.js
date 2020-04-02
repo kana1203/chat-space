@@ -116,7 +116,6 @@ $(function(){
       if (messages.length !== 0) {
         var insertHTML = '';
         $.each(messages,function(i,message){
-          console.log(message)
           insertHTML += buildHTML(message)
         });
         $('.main_chat__centers').append(insertHTML);
